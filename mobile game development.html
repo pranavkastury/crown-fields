@@ -1,554 +1,575 @@
-
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
 <!-- Mirrored from html.xpeedstudio.com/upturn/email-marketing.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Apr 2021 13:36:53 GMT -->
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Crown Fields</title>
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900%7COpen+Sans:400,700,700i" rel="stylesheet">
-<link rel="icon" type="image/png" href="favicon.html">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Crown Fields</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900%7COpen+Sans:400,700,700i" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.html">
 
-<link rel="apple-touch-icon" href="apple-touch-icon.html">
-<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/animate.css">
-<link rel="stylesheet" href="assets/css/iconfont.css">
-<link rel="stylesheet" href="assets/css/magnific-popup.css">
-<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-<link rel="stylesheet" href="assets/css/rev-settings.css">
+    <link rel="apple-touch-icon" href="apple-touch-icon.html">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/iconfont.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/rev-settings.css">
 
-<link rel="stylesheet" href="assets/css/plugins.css" />
+    <link rel="stylesheet" href="assets/css/plugins.css" />
 
-<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-<link rel="stylesheet" href="assets/css/responsive.css" />
-<style>
-  <style>
-* {
-  box-sizing: border-box;
-}
-@media(max-width: 360px){
-  .image{
-    flex-direction:column;
-  }
-}
-	.container {
-  position: relative;
-  width: 50%;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-25%, -25%);
-  -ms-transform: translate(-25%, -25%);
-  text-align: left;
-}
-
-.container:.image {
-  opacity: 0.3;
-}
-
-.container:.middle {
-  opacity: 1;
-}
-
-.text {
-  background-color:;
-  color: black;
-  font-size: 20px;
-  padding: 14px 22px;
-  text-align: left;
-}
-.button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.button1 {background-color: #e60000;} /* Green */
-html{
-  scroll-behavior: smooth;
-}
-.body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  margin: 0;
-  padding:0;
-}
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #e60000 ;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 4px;
-  text-decoration: none;
-  text-align: center;
-  line-height: 20px;
-  color: white;
-  font-size: 22px;
-}
-
-
-#myBtn:hover {
-  background-color: #e60000;
-}
-
-</style>
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        @media(max-width: 360px) {
+            .image {
+                flex-direction: column;
+            }
+        }
+        
+        .container {
+            position: relative;
+            width: 50%;
+        }
+        
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-25%, -25%);
+            -ms-transform: translate(-25%, -25%);
+            text-align: left;
+        }
+        
+        .container .image {
+            opacity: 0.3;
+        }
+        
+        .container .middle {
+            opacity: 1;
+        }
+        
+        .text {
+            color: black;
+            font-size: 20px;
+            padding: 14px 22px;
+            text-align: left;
+        }
+        
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        
+        .button1 {
+            background-color: #e60000;
+        }
+        /* Green */
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #e60000;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 20px;
+            color: white;
+            font-size: 22px;
+        }
+        
+        #myBtn:hover {
+            background-color: #e60000;
+        }
+    </style>
 </head>
+
 <body>
-<!--[if lt IE 10]>
+    <!--[if lt IE 10]>
 		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
 
-<header class="xs-header header-main">
-<div class="container">
-<div class="row">
-<div class="col-lg-3">
-<div class="xs-logo-wraper">
-<a href="index.html" class="xs-logo">
-<img src="assets/images/logo 5.png" alt="" class="logo-transparent" width="130px" height="60px">
-</a>
-</div>
-</div>
-<div class="col-lg-7 col-md-6">
-<nav class="xs-menus align-to-right">
-<div class="nav-header">
-<a class="nav-brand" href="index-2.html"></a>
-<div class="nav-toggle"></div>
-</div>
-<div class="nav-menus-wrapper">
-<ul class="nav-menu align-to-right">
-<li><a href="index.html">HOME</a>
-</li>
-<li><a href="Aboutus.html">ABOUT</a>
-</li>
-<li><a href="#">SERVICES</a>
-<ul class="nav-dropdown xs-icon-menu clearfix">
-<li class="single-menu-item">
-<a href="grid.html" style="color:black;"><i class=""></i> Food & Beverages</a>
-</li>
-<li class="single-menu-item">
-<a href="new It solution.html" style="color:black;"><i class=""></i> IT Solutions</a>
-</li>
-</ul>
-</li>
-<li><a href="Contact1.html">CONTACT</a></li>
-</ul>
-</div>
-</nav>
-</div>
-<div class="col-lg-2 col-md-6">
-<ul class="xs-menu-tools">
-<li>
-<a href="#modal-popup-1" class="languageSwitcher-button xs-modal-popup">
-<span class="xs-flag" style="background-image: url(assets/images/flags/006-united-states.svg);"></span>
-<span class="lang-title">EN</span>
-</a>
-</li>
-<li>
-<a href="#modal-popup-2" class="navsearch-button xs-modal-popup"><i class="icon icon-search"></i></a>
-
-</li>
-</ul>
-</div>
-</div>
-</div>
-</header> 
-</div>
-
-
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="assets\images\backgrounds\game banner for web site.png" class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
-
-<section class="xs-section-padding service-primay-section" data-scrollax-parent="true">
-<div class="container">
-<div class="row">
-<div class="col-md-8 mx-auto">
-<div class="xs-heading text-center">
-<br><br><h2 class="section-title">Mobile Game <span class="text-danger">Development</h2><span class="line"></span>
-</div>
-<div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-<div class="container">
-<div class="row">
-<div class="col-md-6">
-<div>
-<br><br><img src="assets\images\android-game-app-development.png" class="" style="width:40% height=20%" >
-</div>
-</div>
-<div class="col-md-6"><br>
-<br><br><br><br><p style="font-size: 18px">Interactive, Professional and Responsive game development company with
-efficient expertise in gaming and entertainment giving our best in
-designing, developing, testing and publishing a wide array of games
-crossing various genres like Casual, Puzzle, RPG, Skill, Arcade, Racing,
-Action, Adventure, Strategy, etc. across all platforms.</p><br>
-</div>
-</div>
-</div><br><br>
-
-
-<section class="xs-section-padding xs-seo-info" id="about">
-<div class="container">
-<div class="row">
-<div class="col-lg-6 align-self-center">
-<div class="xs-info">
-<div class="xs-heading">
-</div>
-<br><br><p style="font-size: 18px">We include social features, rigid and tidy code, uncompromising quality assurance to
-deliver products encompassing a high entertainment value. We believe in latest
-technology and our work, which mainly focus on every platform, and have the capacity
-to scale with our Clients production demands and the industry need for world class
-outsource support for Art and Programming services. We provide the most qualified
-Teams to our Clients, and deliver the Highest Quality, Timeliness and Value in
-everything that we do.<br><br></p>
-</div>
-</div>
-<div class="col-lg-6">
-<div class="">
-<br><br><img src="assets/images/game-development-company.png" alt="">
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-
-
-<section class="xs-section-padding service-primay-section" data-scrollax-parent="true">
-<div class="container">
-<div class="row">
-<div class="col-md-8 mx-auto">
-<div class="xs-heading text-center">
-<br><br><br><h2 class="section-title" >Our mobile games offer the following features: <span class="text-danger"></h2><span class="line"></span>
-</div>
-<div>
-<ul class="xs-list check" align-text="right" style="font-size: 15px">
-<li> Cross-platform support, including iOS, Android and Windows</li>
-<li>Intuitive design and animations for stunning look and feel</li>
-<li> Seamless UI/UX integration for a power-packed gaming experience</li>
-<li> Breathtaking visuals and graphics to make your games more effective and addictive</li>
-<li>Level designing and level programming to engage players</li>
-<li>Blazing fast performance and responsiveness for a power-packed gameplay</li>
-<li> Stunning visual appeal to grab your user's attention</li>
-<li>Comprehensive push notification support so that you never miss an important update</li>
-<li> Social media and ads integration for better engagement and conversations</li>
-<li>Interactive in-app purchases to convert your game users into customers</li>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-<section class="xs-section-padding xs-seo-info" id="about">
-<div class="container">
-<div class="row">
-<div class="col-lg-6 align-self-center">
-<div class="xs-info">
-<div class="xs-heading">
-<br><br><br><br><h3 class="section-title">Technologies We Work With:</h3>
-<span class="line"></span>
-</div>
-<ul class="xs-list check">
-<li>Adobe Photoshop</li>
-<li>3ds Max</li>
-<li>Maya</li>
-<li>Substance Painter</li>
-<li>Adobe Animation</li>
-<li>After Effects</li>
-<li>Unity 3D</li>
-<li>Unreal Engine</li>
-<li>Cocos2D-X</li>
-<li>HTML5</li>
-<li>Android Studio</li>
-<li> XCode</li>
-<li>Photon for Multiplayer</li>
-<li> Smart Fox Server</li>
-<li> Repositories</li>
-</ul>
-</div>
-</div>
-<div class="col-lg-6">
-<div class=><br><br>
-<br><br><br><br><br><br><br><img src="assets/images/header.png" alt="" >
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-
-
-<div class="zoom-anim-dialog mfp-hide modal-language" id="modal-popup-1">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<div class="language-content">
-<p>Switch The Language</p>
-<ul class="flag-lists">
-<li><a href="#"><img src="assets/images/flags/006-united-states.svg" alt=""><span>English</span></a></li>
-<li><a href="#"><img src="assets/images/flags/ukraine-512.png" alt=""><span>Ukraine</span></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div> <br><br>
-
-
-<div class="container1">
-  <div class="col-md-12">
-  <img src="assets/images/new_01.png" alt="Snow" style="width:100%;">
-</div>
-  <br><br><br><div class="centered"><br><br><br><br><br><b>Let us help you grow</b> <br><br><h3 style="color:white;">Get your free quote today</h3><br><button class="btn btn-primary"><a href="Contact1.html"><b style="color:white;">Contact Us</b></a></button></div>
-</div>
-
-
- </div>
-<div class="container">
-  <div class="row">
-    <div class="col-md-6" class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a ">
-    <a href=""> <span class="gdlr-core-space-shortcode" style="margin-top: 10px; "></span> <i class="fa fa-phone" style="font-size: 16px;color: #ff4800;margin-right: 10px;"></i> +380 50 188 68 01</a>
-    </div>
-    <div class="col-md-6" align="right">
-     <a href=""><span class="gdlr-core-space-shortcode" style="margin-top: 10px;"></span> <i class="fa fa-envelope-open-o" style="font-size: 16px;color: #ff4800;margin-right: 15px;"></i> sales@crownfields.net</p></a>
-    </div><br><br><br>
-  </div>
-</div>
-</div>
-        
+    <header class="xs-header header-main">
         <div class="container">
-        	<div class="row">
-      <div class="col-md-12">
-  	<div class="card mb-3">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.4716557402926!2d30.808452015945935!3d50.525396789842475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d92048b71227%3A0x6fffc0bc9f75f3e6!2sCrown%20Fields%20LLC!5e0!3m2!1sen!2sin!4v1617785750239!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  <div class="card-body">
-    <center><h5 class="card-title"> <i class="icofont-google-map"></i>Ukraine Head Office Location</h5>
-    <h6 class="card-text"><b>Crown Fields LLC</b> <br>
-Office 206, Nezalezhnosti Boulevard, 31,Brovary, Kyiv Oblast, Ukraine
-Contact:-+380 50 188 68 01
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="xs-logo-wraper">
+                        <a href="index.html" class="xs-logo">
+                            <img src="assets/images/logo 5.png" alt="" class="logo-transparent" width="130px" height="60px">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6">
+                    <nav class="xs-menus align-to-right">
+                        <div class="nav-header">
+                            <a class="nav-brand" href="index-2.html"></a>
+                            <div class="nav-toggle"></div>
+                        </div>
+                        <div class="nav-menus-wrapper">
+                            <ul class="nav-menu align-to-right">
+                                <li><a href="index.html">HOME</a>
+                                </li>
+                                <li><a href="Aboutus.html">ABOUT</a>
+                                </li>
+                                <li><a href="#">SERVICES</a>
+                                    <ul class="nav-dropdown xs-icon-menu clearfix">
+                                        <li class="single-menu-item">
+                                            <a href="grid.html" style="color:black;"><i class=""></i> Food & Beverages</a>
+                                        </li>
+                                        <li class="single-menu-item">
+                                            <a href="new It solution.html" style="color:black;"><i class=""></i> IT Solutions</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="Contact1.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <ul class="xs-menu-tools">
+                        <li>
+                            <a href="#modal-popup-1" class="languageSwitcher-button xs-modal-popup">
+                                <span class="xs-flag" style="background-image: url(assets/images/flags/006-united-states.svg);"></span>
+                                <span class="lang-title">EN</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#modal-popup-2" class="navsearch-button xs-modal-popup"><i class="icon icon-search"></i></a>
 
-</h6>
-    <p class="card-text"><small class="text-muted"></small></p></center>
-  </div>
-</div>
-</div><br><br><br>
-<div class="col-md-6">
-<div class="card mb-3">
- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2532.61015948101!2d30.889755315947788!3d50.59719878466064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d5278bac0f83d5%3A0xa18648285127f231!2sCrown%20Fields%20Warehouse!5e0!3m2!1sen!2sin!4v1617785787501!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  <div class="card-body">
-   <center> <h5 class="card-title"> <i class="icofont-google-map"></i>Warehouse Location</h5>
-    <h6 class="card-text"><b>Crown Fields Warehouse</b><br>
-Parkova Street 16 Smt Velyka, Dymerka, Kyiv Oblast, Ukraine, 07442
-Contact:-+380 50 188 68 01
-
-</h6>
-    <p class="card-text"><small class="text-muted"></small></p></center>
-  </div>
-</div>
- </div>
-
-     <div class="col-md-6">
-  	<div class="card mb-3">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.153875502408!2d78.4588663153004!3d17.40440158806845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9771d0421005%3A0x2d204ce2c23ce5fe!2sDowntown%20Mall!5e0!3m2!1sen!2sin!4v1617788089495!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  <div class="card-body">
-     <center><h5 class="card-title"> </i>India Location</h5>
-    <h6 class="card-text"><b>Crown Fields India </b><br>
-    322, 3rd Floor, Downtown Mall, Lakdi Ka Pul, Hyderabad, Telengana India - 500004
-  Contact: +91 91 33 99 5555</h6>
-    <p class="card-text"><small class="text-muted"></small></p></center>
-  </div>
-</div>
-</div>
-        	</div>
-        	</div>
-        	 </div>
-        	   </div>
-        	</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
+    </header>
+    </div>
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets\images\backgrounds\game banner for web site.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <section class="xs-section-padding service-primay-section" data-scrollax-parent="true">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="xs-heading text-center">
+                        <br><br>
+                        <h2 class="section-title">Mobile Game <span class="text-danger">Development</h2><span class="line"></span>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <br><br><img src="assets\images\android-game-app-development.png" class="" style="width:40% height=20%">
+                </div>
+            </div>
+            <div class="col-md-6"><br>
+                <br><br><br><br>
+                <p style="font-size: 18px">Interactive, Professional and Responsive game development company with efficient expertise in gaming and entertainment giving our best in designing, developing, testing and publishing a wide array of games crossing various genres like
+                    Casual, Puzzle, RPG, Skill, Arcade, Racing, Action, Adventure, Strategy, etc. across all platforms.</p><br>
+            </div>
+        </div>
+    </div><br><br>
+
+
+    <section class="xs-section-padding xs-seo-info" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 align-self-center">
+                    <div class="xs-info">
+                        <div class="xs-heading">
+                        </div>
+                        <br><br>
+                        <p style="font-size: 18px">We include social features, rigid and tidy code, uncompromising quality assurance to deliver products encompassing a high entertainment value. We believe in latest technology and our work, which mainly focus on every platform,
+                            and have the capacity to scale with our Clients production demands and the industry need for world class outsource support for Art and Programming services. We provide the most qualified Teams to our Clients, and deliver the
+                            Highest Quality, Timeliness and Value in everything that we do.<br><br></p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="">
+                        <br><br><img src="assets/images/game-development-company.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="xs-section-padding service-primay-section" data-scrollax-parent="true">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="xs-heading text-center">
+                        <br><br><br>
+                        <h2 class="section-title">Our mobile games offer the following features: <span class="text-danger"></h2><span class="line"></span>
+                    </div>
+                    <div>
+                        <ul class="xs-list check" align-text="right" style="font-size: 15px">
+                            <li> Cross-platform support, including iOS, Android and Windows</li>
+                            <li>Intuitive design and animations for stunning look and feel</li>
+                            <li> Seamless UI/UX integration for a power-packed gaming experience</li>
+                            <li> Breathtaking visuals and graphics to make your games more effective and addictive</li>
+                            <li>Level designing and level programming to engage players</li>
+                            <li>Blazing fast performance and responsiveness for a power-packed gameplay</li>
+                            <li> Stunning visual appeal to grab your user's attention</li>
+                            <li>Comprehensive push notification support so that you never miss an important update</li>
+                            <li> Social media and ads integration for better engagement and conversations</li>
+                            <li>Interactive in-app purchases to convert your game users into customers</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="xs-section-padding xs-seo-info" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 align-self-center">
+                    <div class="xs-info">
+                        <div class="xs-heading">
+                            <br><br><br><br>
+                            <h3 class="section-title">Technologies We Work With:</h3>
+                            <span class="line"></span>
+                        </div>
+                        <ul class="xs-list check">
+                            <li>Adobe Photoshop</li>
+                            <li>3ds Max</li>
+                            <li>Maya</li>
+                            <li>Substance Painter</li>
+                            <li>Adobe Animation</li>
+                            <li>After Effects</li>
+                            <li>Unity 3D</li>
+                            <li>Unreal Engine</li>
+                            <li>Cocos2D-X</li>
+                            <li>HTML5</li>
+                            <li>Android Studio</li>
+                            <li> XCode</li>
+                            <li>Photon for Multiplayer</li>
+                            <li> Smart Fox Server</li>
+                            <li> Repositories</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class=><br><br>
+                        <br><br><br><br><br><br><br><img src="assets/images/header.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="zoom-anim-dialog mfp-hide modal-language" id="modal-popup-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="language-content">
+                    <p>Switch The Language</p>
+                    <ul class="flag-lists">
+                        <li>
+                            <a href="#"><img src="assets/images/flags/006-united-states.svg" alt=""><span>English</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/flags/ukraine-512.png" alt=""><span>Ukraine</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> <br><br>
+
+
+    <div class="container1">
+        <div class="col-md-12">
+            <img src="assets/images/new_01.png" alt="Snow" style="width:100%;">
+        </div>
+        <br><br><br>
+        <div class="centered"><br><br><br><br><br><b>Let us help you grow</b> <br><br>
+            <h3 style="color:white;">Get your free quote today</h3><br><button class="btn btn-primary"><a href="Contact1.html"><b style="color:white;">Contact Us</b></a></button></div>
+    </div>
+
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a ">
+                <a href=""> <span class="gdlr-core-space-shortcode" style="margin-top: 10px; "></span> <i class="fa fa-phone" style="font-size: 16px;color: #ff4800;margin-right: 10px;"></i> +380 50 188 68 01</a>
+            </div>
+            <div class="col-md-6" align="right">
+                <a href=""><span class="gdlr-core-space-shortcode" style="margin-top: 10px;"></span> <i class="fa fa-envelope-open-o" style="font-size: 16px;color: #ff4800;margin-right: 15px;"></i> sales@crownfields.net</p></a>
+            </div><br><br><br>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.4716557402926!2d30.808452015945935!3d50.525396789842475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d92048b71227%3A0x6fffc0bc9f75f3e6!2sCrown%20Fields%20LLC!5e0!3m2!1sen!2sin!4v1617785750239!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="card-body">
+                        <center>
+                            <h5 class="card-title"> <i class="icofont-google-map"></i>Ukraine Head Office Location</h5>
+                            <h6 class="card-text"><b>Crown Fields LLC</b> <br> Office 206, Nezalezhnosti Boulevard, 31,Brovary, Kyiv Oblast, Ukraine Contact:-+380 50 188 68 01
+
+                            </h6>
+                            <p class="card-text"><small class="text-muted"></small></p>
+                        </center>
+                    </div>
+                </div>
+            </div><br><br><br>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2532.61015948101!2d30.889755315947788!3d50.59719878466064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d5278bac0f83d5%3A0xa18648285127f231!2sCrown%20Fields%20Warehouse!5e0!3m2!1sen!2sin!4v1617785787501!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="card-body">
+                        <center>
+                            <h5 class="card-title"> <i class="icofont-google-map"></i>Warehouse Location</h5>
+                            <h6 class="card-text"><b>Crown Fields Warehouse</b><br> Parkova Street 16 Smt Velyka, Dymerka, Kyiv Oblast, Ukraine, 07442 Contact:-+380 50 188 68 01
+
+                            </h6>
+                            <p class="card-text"><small class="text-muted"></small></p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.153875502408!2d78.4588663153004!3d17.40440158806845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9771d0421005%3A0x2d204ce2c23ce5fe!2sDowntown%20Mall!5e0!3m2!1sen!2sin!4v1617788089495!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="card-body">
+                        <center>
+                            <h5 class="card-title">
+                                </i>India Location</h5>
+                            <h6 class="card-text"><b>Crown Fields India </b><br> 322, 3rd Floor, Downtown Mall, Lakdi Ka Pul, Hyderabad, Telengana India - 500004 Contact: +91 91 33 99 5555</h6>
+                            <p class="card-text"><small class="text-muted"></small></p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
     </p>
-</div>
-</div>
- </section>
-<section class="xs-section-padding">
-<div class="container">
-<div class="row">
-<div class="col-lg-5 col-md-8 mx-auto">
-<div class="xs-heading text-center style4">
-<h3 class="section-title">Drop us a <span class="text-danger">Line</span></h3>
-<span class="line"></span>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-10 mx-auto">
-<div class="contact-from-wraper wow fadeIn">
-<form action="#" class="xs-from" method="post" id="xs-contact-form">
-<div class="row">
-<div class="col-lg-6">
-<div class="form-group">
-<input type="text" name="name" id="xs_contact_name" class="form-control" placeholder="Name *">
-</div>
-</div>
-<div class="col-lg-6">
-<div class="form-group">
-<input type="email" name="email" id="xs_contact_email" class="form-control" placeholder="Mail *">
-</div>
-</div>
-<div class="col-lg-6">
-<div class="form-group">
-<input type="number" name="phone" id="xs_contact_phone" class="form-control" placeholder="Phone *">
-</div>
-</div>
-<div class="col-lg-6">
-<div class="form-group">
-<input type="text" name="subject" id="xs_contact_subject" class="form-control" placeholder="Subject">
-</div>
-</div>
-</div>
-<div class="form-group">
-<textarea name="massage" id="x_contact_massage" class="form-control" placeholder="Your Message *" cols="30" rows="10"></textarea>
-</div>
-<div  class="col-md-12">
-<center><input type="submit" name="submit" value="Submit" class="btn btn-primary style2" id="xs_contact_submit"></center>
-</div>
-</form>
-</div>
-</div>
-</div>
-</div>
-</section>
+    </div>
+    </p>
+    </div>
+    </div>
+    </section>
+    <section class="xs-section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-8 mx-auto">
+                    <div class="xs-heading text-center style4">
+                        <h3 class="section-title">Drop us a <span class="text-danger">Line</span></h3>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="contact-from-wraper wow fadeIn">
+                        <form action="connect.php" class="xs-from" method="post" id="xs-contact-form">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" name="name" id="xs_contact_name" class="form-control" placeholder="Name *">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="email" name="email" id="xs_contact_email" class="form-control" placeholder="Mail *">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="number" name="phone" id="xs_contact_phone" class="form-control" placeholder="Phone *">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <input type="text" name="subject" id="xs_contact_subject" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="massage" id="x_contact_massage" class="form-control" placeholder="Your Message *" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="col-md-12">
+                                <center><input type="submit" name="submit" value="Submit" class="btn btn-primary style2" id="xs_contact_submit"></center>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<a href="#seocrawler-top-anchor" class="seocrawler-footer-back-to-top-button seocrawler-scrolled" id="seocrawler-footer-back-to-top-button"><i class="fa fa-angle-up"></i></a>
+    <a href="#seocrawler-top-anchor" class="seocrawler-footer-back-to-top-button seocrawler-scrolled" id="seocrawler-footer-back-to-top-button"><i class="fa fa-angle-up"></i></a>
 
-<br><br><br>
-<div class="zoom-anim-dialog mfp-hide modal-language" id="modal-popup-1">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<div class="language-content">
-<p>Switch The Language</p>
-<ul class="flag-lists">
-<li><a href="index.html"><img src="assets/images/flags/006-united-states.svg" alt=""><span>English</span></a></li>
-<li><a href="#"><img src="assets/images/flags/ukraine-512.png" alt=""><span>Ukraine</span></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+    <br><br><br>
+    <div class="zoom-anim-dialog mfp-hide modal-language" id="modal-popup-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="language-content">
+                    <p>Switch The Language</p>
+                    <ul class="flag-lists">
+                        <li>
+                            <a href="index.html"><img src="assets/images/flags/006-united-states.svg" alt=""><span>English</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/images/flags/ukraine-512.png" alt=""><span>Ukraine</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">^</i></i></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</i></i></button>
 
-<script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
-
-
-
-<footer class="xs-footer-section">
-<div class="copyright">
-<div class="container">
-<div class="row">
-<div class="col-md-6">
-<div class="copyright-text">
-<h5 style="color:black;">Copyright &copy; 2018, All Right Reserved Crown Fields</h5>
-</div>
-</div>
-<div class="col-md-6">
-<ul class="social-list">
-<li><a href="https://www.facebook.com/crownfileds" class="facebook"><i class="fa fa-phone"></i></a></li>
-<li><a href="https://twitter.com/crownfieldsofcl" class="twitter"><i class="fa fa-twitter"></i></a></li>
-<li><a href="https://www.instagram.com/crownfieldsofficial/" class="instagram"><i class="fa fa-instagram"></i></a></li>
-
-</div>
-</div>
-</div>
-</div>
-</footer>
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
 
-<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/js/plugins.js"></script>
-<script src="assets/js/Popper.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/jquery.ajaxchimp.min.js"></script>
-<script src="assets/js/jquery.waypoints.min.js"></script>
-<script src="assets/js/isotope.pkgd.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=AIzaSyCy7becgYuLwns3uumNm6WdBYkBpLfy44k"></script>
-<script src="assets/js/scrollax.js"></script>
-<script src="assets/js/jquery.themepunch.revolution.min.js"></script>
-<script src="assets/js/jquery.themepunch.tools.min.js"></script>
-<script src="assets/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="assets/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="assets/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="assets/js/jquery.easypiechart.min.js"></script>
-<script src="assets/js/delighters.js"></script>
-<script src="assets/js/main.js"></script> 
+
+    <footer class="xs-footer-section">
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="copyright-text">
+                            <h5 style="color:black;">Copyright &copy; 2018, All Right Reserved Crown Fields</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="social-list">
+                            <li><a href="https://www.facebook.com/crownfileds" class="facebook"><i class="fa fa-phone"></i></a></li>
+                            <li><a href="https://twitter.com/crownfieldsofcl" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/crownfieldsofficial/" class="instagram"><i class="fa fa-instagram"></i></a></li>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/Popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=AIzaSyCy7becgYuLwns3uumNm6WdBYkBpLfy44k"></script>
+    <script src="assets/js/scrollax.js"></script>
+    <script src="assets/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/js/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="assets/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="assets/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.min.js"></script>
+    <script src="assets/js/delighters.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 <!-- Mirrored from html.xpeedstudio.com/upturn/email-marketing.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Apr 2021 13:36:53 GMT -->
+
 </html>
